@@ -1,0 +1,151 @@
+.menu-openner span {
+    font-size: 1.2em;
+    color: #fff;
+    position: absolute;
+    top: 12px;
+    right: 100px;
+    margin-right:10px;
+}
+
+.menu-closer {
+    width:32px;
+    height:32px;
+    display:none;
+    font-size: 30px;
+}
+
+aside {
+    border: 2px solid rgb(233, 233, 233);
+    background-color:#ffffff;
+    width:0vw;
+    height: 100vh;
+    transition:all ease .2s;
+    overflow-x:hidden;
+}
+
+aside.show {
+    width:30vw;
+}
+
+.cart--area {
+    padding:20px;
+}
+
+.cart {
+    margin-bottom:20px;
+}
+
+.cart--item {
+    display:flex;
+    align-items:center;
+    margin:10px 0;
+}
+
+.cart--item img {
+    width:40px;
+    height:40px;
+    margin-right:20px;
+}
+
+.cart--item-nome {
+    flex:1;
+}
+
+.cart--item--qtarea {
+    display:inline-flex;
+    background-color:#EEE;
+    border-radius:10px;
+    height:30px;
+}
+
+.cart--item--qtarea button {
+    border:0;
+    background-color:transparent;
+    font-size:17px;
+    outline:0;
+    cursor:pointer;
+    padding:0px 10px;
+    color:#6E6E6E;
+}
+
+.cart--item--qt {
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px 5px;
+    color:#000;
+}
+
+.cart--totalitem {
+    padding:15px 0;
+    border-top:1px solid #afadad;
+    color:#afadad;
+    display:flex;
+    justify-content: space-between;
+    font-size:1.2em;
+}
+
+.cart--totalitem span:first-child {
+    font-weight: bold;
+}
+
+.cart--totalitem.big {
+    font-size:20px;
+    color:#000;
+    font-weight: bold;
+}
+
+.btn-finalizar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+}
+.cart--finalizar {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding:20px 30px;
+    border-radius:20px;
+    background-color:#FA5858;
+    color:#FFF;
+    cursor:pointer;
+    text-align:center;
+    margin-top:20px;
+    border:2px solid #FA5858;
+    transition: all ease .2s;
+}
+
+.cart--finalizar:hover {
+    background-color:#e02727;
+    border:2px solid #e02727;
+}
+
+@media (max-width: 840px) {
+    .menu-openner span {
+        font-size: 1.2em;
+        color: #fff;
+        position: absolute;
+        top: 32px;
+        right: 25px;
+        margin-right:10px;
+    }
+    aside {
+        position: fixed;
+        background-color:#ffffff;
+        width:auto;
+        height: 0vh;
+        right:0;
+        top:0;
+        bottom:0;
+        transition:all ease .0s;
+    }
+    aside.show {
+        width:auto;
+    }
+    .cart--area {
+        width:100vw;
+    }
+    .menu-closer {
+        display:block;
+    }
+}

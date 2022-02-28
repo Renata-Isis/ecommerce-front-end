@@ -1,0 +1,29 @@
+.container-login {
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background-color:rgba(0,0,0,.5);
+    display:none;
+    transition: all ease .5s;
+    justify-content: center;
+    align-items: center;
+    overflow-y:auto;
+    z-index: 200;
+}
+
+.container-login.ativo {
+    display: flex;
+}
+
+.forms { 
+    display:block;
+    width:750px;
+    height: 500px;
+    background-color:#FFF;
+    border-radius:10px;
+    box-shadow:0px 0px 15px #999;
+    margin:20px 0px;
+    padding: 15px;
+}

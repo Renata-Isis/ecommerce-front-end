@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <header>
+        <div class="menu-busca">
+            <a href="index.html" class="logo"><img src="images/logo.svg" alt="Logo newHome"></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="forms">
+            <h1>Criar Seu Cadastro</h1>
+            <form method="POST" action="cadastro" class="validator">
+                <label>
+                    Nome:<br/>
+                    <input type="text" class="input-geral"><br/>
+                </label>
+                <label >
+                    Email:<br/>
+                    <input type="email" name="email" id="email" class="input-geral"><br/>
+                </label>
+                <label >
+                    CPF/CNPJ:<br/>
+                    <input type="text" class="input-geral"><br/>
+                </label>
+                <label>
+                    Data Nascimento:<br/>
+                    <input type="date" name="nasc" min="1900-01-01" max="2099-12-31" class="input-geral" id="dataNasc"><br/>
+                </label>
+                <label >
+                    Telefone:<br/>
+                    <input type="text" class="input-geral"><br/>
+                </label>
+                <label >
+                    CEP:<br/>
+                    <input type="text" class="input-geral"><br/>
+                </label>
+                <label >
+                    Rua:<br/>
+                    <input type="text" class="input-geral"><br/>
+                </label>
+                <label >
+                    N°<br/>
+                    <input type="text" class="input-geral"><br/>
+                </label>
+                <label >
+                    Cidade:<br/>
+                    <input type="text" class="input-geral"><br/>
+                </label>
+                <label >
+                    Estado:<br/>
+                    <input type="text" class="input-geral"><br/>
+                </label>
+            </form>
+            <input type="button" value="Enviar" class="input-geral" id="btnEnviar">
+            <p>Já tem cadastro? <a href="login.html">Entrar</a></p>
+        </div>
+    </div>
+</body>
+</html>

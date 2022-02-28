@@ -1,0 +1,239 @@
+.produtoWindowArea {
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background-color:rgba(0,0,0,.5);
+    display:none;
+    transition: all ease .5s;
+    justify-content: center;
+    align-items: center;
+    overflow-y:auto;
+}
+
+.produtoWindowArea .ativo {
+    display: flex;
+}
+
+.produtoWindowBody {
+    width:750px;
+    height: 500px;
+    background-color:#FFF;
+    border-radius:10px;
+    box-shadow:0px 0px 15px #999;
+    display:flex;
+    margin:20px 0px;
+    padding: 15px;
+}
+
+@keyframes produtoWindowArea {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0)
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+.ativo .produtoWindowBody  {
+    animation: produtoWindowArea .3s forwards;
+}
+
+.produtoBig {
+    flex:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produtoBig img {
+    width: 300px;
+}
+
+.produtoInfo {
+    flex:1;
+    padding-left: 20px;
+}
+
+.produtoInfo h1 {
+    text-align:left;
+    margin-top:50px;
+    font-size: 2em;
+    padding: 0px;
+}
+
+.produtoInfo .produtoInfo--desc, .produtoInfo--juros {
+    font-size:1.2em;
+    color:#999;
+    margin-top:15px;
+}
+
+.produtoInfo--sector {
+    color:#999;
+    text-transform: uppercase;
+    font-size:14px;
+    margin-top:30px;
+    margin-bottom:10px;
+}
+
+.produtoInfo--price {
+    display:flex;
+    align-items:center;
+    justify-content: flex-start;
+}
+
+.produtoInfo--actualPrice {
+    font-size:2.2em;
+    margin-right:30px;
+    font-weight: bold;
+}
+
+.produtoInfo--qtarea {
+    display:inline-flex;
+    background-color:#EEE;
+    border-radius:10px;
+    height:30px;
+}
+
+.produtoInfo--qtarea button {
+    border:0;
+    background-color:transparent;
+    font-size:1.8em;
+    outline:0;
+    cursor:pointer;
+    padding:0px 10px;
+    color:#333;
+}
+
+.produtoInfo--qt {
+    line-height: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0px 5px;
+    color:#000;
+}
+
+.container-link{
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    margin-top: 10px;
+}
+
+.produtoInfo--addButton {
+    border-radius: 5px;
+    border:2px solid #FA5858;
+    padding: 8px;
+    margin: 20px 0px;
+    width: 100px;
+    color: #fff;
+    background-color: #FA5858;
+}
+
+.produtoInfo--addButton:hover {
+    background-color: #FFF;
+    color: #FA5858;
+    border: 2px solid #FA5858;
+}
+
+.produtoInfo--cancelButton {
+    border-radius: 5px;
+    border:2px solid transparent;
+    padding: 8px;
+    margin: 20px 10px;
+    width: 100px;
+    color: rgb(160, 158, 158);
+    background-color: #Fff;
+    cursor: pointer;
+}
+
+.produtoInfo--cancelButton:hover {
+    background-color: rgb(160, 158, 158);
+    color: #Fff;
+}
+
+.produtoInfo--cancelMobileButton {
+    display:none;
+    height:40px;
+    text-align:center;
+    line-height: 40px;
+    margin-bottom:30px;
+}
+
+@media (max-width:840px) {
+    .produtoWindowArea {
+        align-items: flex-start;
+    }
+
+    .produtoWindowBody {
+        width:100vw;
+        height: 800px;
+        display:block;
+        padding:20px;
+        border-radius:0;
+        margin:0;
+    }
+
+    .produtoBig img {
+        width: 70%;
+        height: auto;
+    }
+
+    .produtoInfo h1 {
+        margin-top:20px;
+        font-size: 1.5em;
+    }
+
+    .produtoInfo .produtoInfo--desc, .produtoInfo--juros {
+        margin-top:25px;   
+    }
+
+    .produtoInfo--actualPrice {
+        font-size:1.5em;
+    }
+    
+    .produtoInfo--qtarea {
+        height:30px;
+    }
+
+    .produtoInfo--qtarea button {
+        font-size:25px;
+        padding:0px 25px;
+        height:0px;
+    }
+
+    .produtoInfo--qt {
+        font-size:10px;
+    }
+
+    .container-link{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+    .produtoInfo--addButton {
+        font-size:1em;
+        display:block;
+        text-align:center;
+        margin:20px 0px 20px 20px;
+        border-radius: 5px;
+        border:2px solid #FA5858;
+        padding: 10px;
+        width: 200px;
+        color: #fff;
+        background-color: #FA5858;
+    }
+    .produtoInfo--cancelButton {
+        display:none;
+    }
+    .produtoInfo--cancelMobileButton {
+        display:block;
+        font-size: 1.4em;
+        font-weight: bold;
+    }
+}
+

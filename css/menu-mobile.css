@@ -1,0 +1,33 @@
+.btn-mobile {
+    display: none;
+}
+
+@media (max-width: 840px) {
+    .btn-mobile {
+      display: flex;
+      align-items: center;
+      margin: 0 2.2rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+      z-index: 100;
+
+    }
+    #hamburger {
+        border-top: 2px solid rgb(245, 242, 242);
+        width: 30px;
+        margin-top: 5px;
+    }
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 2px;
+        background: rgb(245, 243, 243);
+        margin: 10px 0px 10px 0;
+        transition: 0.3s;
+        position: relative; 
+    }
+}

@@ -1,0 +1,82 @@
+.navegacao {
+    background: white;
+}
+
+.nav-lista {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.nav-lista li a {
+    font-weight: bold;
+    color: #6E6E6E;
+    padding: 8px;
+    position: relative;
+    transition: color 0.2s;
+}
+
+.nav-lista li a:hover{
+    color: #FA5858;
+}
+
+.nav-lista li a::after{
+    content:"";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #FA5858;
+    position: absolute;
+    left: 10px;
+    transition: width 0.3s;
+}
+
+.nav-lista li a:hover::after{
+    width: 30px;
+}
+
+@media (max-width: 840px) {
+    .navegacao {
+        background: #FA5858;
+    }
+    .nav-lista {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      top: 0px;
+      right: 0px;
+      background: rgb(212, 212, 212);
+      height: 0;
+      visibility: hidden; /*Escondendo os itens da lista*/
+      overflow-y: hidden; /*Impedindo que os itens da lista apareçam antes do menu no eixo y abrir totalmente*/
+      padding-top: 180px;
+    }
+    .navegacao.ativo .nav-lista {
+        height: 100vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+    .nav-lista li {
+        padding: 1.5rem 0;
+    }
+    .nav-lista li a {
+        font-size: 1rem;
+        text-transform: uppercase;
+        padding: 0 1rem;
+        color: black;
+    }
+    .navegacao.ativo #hamburger {
+        border-top: 2px solid transparent;
+        z-index: 100;
+    }
+    .navegacao.ativo #hamburger::before {
+        transform: rotate(135deg);
+    }
+    .navegacao.ativo #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}

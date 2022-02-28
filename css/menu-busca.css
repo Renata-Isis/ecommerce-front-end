@@ -1,0 +1,90 @@
+header {
+    width: 100%;
+    background-color: #FA5858;
+}
+
+.menu-busca{
+    max-width: 90%;
+    padding-left: 0px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-around;
+    
+}
+
+.img-busca img {
+    position: relative;
+    left: -100px;
+    width: 1.8em;
+}
+
+.logo img {
+    width: 10em;
+}
+
+.menu-busca .buscar {
+    width: 500px;
+    padding: 10px;
+    margin-left: 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    outline: 0;
+}
+
+.cadastro {
+    display: flex;
+    align-items: center;
+}
+
+.cadastro a img {
+    width: 35px;
+}
+
+.cadastro-login {
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.menu-openner-container {
+    display: flex;
+}
+.menu-busca .menu-openner {
+    display: flex;
+    width: 35px;
+}
+
+@media (max-width: 840px) {
+    .cadastro-login {
+      display: none;
+    }
+
+    .logo img {
+       display: flex;
+       margin-right: 20px;
+       padding: 5px;
+    }
+    .menu-busca .buscar {
+        width: 200px;
+        display: block;
+        padding: 8px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        outline: 0;
+    }
+    .img-busca img {
+        display: none;
+    }
+    .cadastro a img {
+        width: 35px;
+    }
+    .cadastro-login {
+        display: none;
+    }
+    .menu-busca .carrinho {
+        display: none;
+    }
+  }

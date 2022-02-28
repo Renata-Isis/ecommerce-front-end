@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Beaba</title>
+</head>
+<body>
+    <div class="container-login">
+        <div class="forms">
+            <h1>Faça seu login</h1>
+            <form method="POST" action="cadastro" class="validator">
+                <label >
+                    Email:<br/>
+                    <input type="email" name="email" id="email" class="input-geral"><br/>
+                </label>
+                <label >
+                    Senha:<br/>
+                    <input type="password"  class="input-geral"><br/>
+                </label>
+            </form>
+            <a href="index.html" class="input-geral" id="btnEnviar">Entrar</a>
+            <p>Não tem cadastro? <a href="cadastro.html">Cadastre-se</a></p>
+        </div>
+    </div>
+
+    <header>
+        <div class="menu-busca">
+                <a href="http://" class="logo">
+                   <img src="images/logo.svg" alt="Logo newHome">
+                </a>
+                <input type="text" class="buscar" placeholder="Buscar">
+                <a href="" class="img-busca"><img src="images/busca.svg" alt="Lupa"></a>
+                <li class="cadastro">
+                    <a href=""><img src="images/usuario.svg" alt="Icone de usuário"></a>
+                    <a href="" class="cadastro-login">Olá, faça seu Login <br/> ou Cadastre-se</a>
+                    <ul class="dropdown-menu">
+                        <p>Acesse já sua conta ou realize seu cadastro:</p>
+                        <li ><a href="" class="entrar-login">Entrar</a></li>
+                        <li ><a href="cadastro.html">Cadastrar</a></li>
+                    </ul>
+                </li>
+                <div class="menu-openner-container">
+                    <a href="http://" class="menu-openner"><span>0</span><img src="images/cart.svg" alt="Carrinho de compras"></a>
+                </div>
+        </div>
+        <nav class="navegacao">
+            <button class="btn-mobile">
+                <span id="hamburger"></span>
+            </button>
+            <ul class="nav-lista">
+                <li><a href="">Informática</a></li>
+                <li><a href="">Celulares</a></li>
+                <li><a href="">Eletrodomésticos</a></li>
+                <li><a href="">Movéis</a></li>
+                <li><a href="">Mercado</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+            <div class="models">
+                <div class="produto-item">
+                    <span class="desconto">10% de desconto</span>
+                    <a href="" class="btn-abrir-modal">
+                        <div class="produto-item--img">
+                            <img src="" />
+                        </div>
+                        <div class="produto-item--desc">testeee</div>
+                        <div class="produto-item--price">R$ --</div>
+                        <div class="produto-item--name">--</div>
+                        <div class="produto-item--juros">--</div>
+                    </a>
+                </div>
+
+                <div class="cart--item">
+                    <img src="" />
+                    <div class="cart--item-nome">--</div>
+                    <div class="cart--item--qtarea">
+                        <button class="cart--item-qtmenos">-</button>
+                        <div class="cart--item--qt">1</div>
+                        <button class="cart--item-qtmais">+</button>
+                    </div>
+                </div>
+            </div>
+
+    <main>
+        <h1 class="ofertas">Ofertas exclusivas, corre para aproveitar!</h1>
+        <div class="produto-area"></div>
+    </main>
+      
+    <aside>
+        <div class="cart--area">
+            <div class="menu-closer">❌</div>
+            <h1>Seus Produtos</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem desconto-total">
+                        <span>Desconto (-10%)</span>
+                        <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                        <span>Total</span>
+                        <span>R$ --</span>
+                </div>
+                <div class="btn-finalizar">
+                    <button class="cart--finalizar">Finalizar a compra</button>
+                </div>
+             </div>
+        </div>
+    </aside>
+
+    <div class="produtoWindowArea">
+        <div class="produtoWindowBody">
+            <div class="produtoInfo--cancelMobileButton">Voltar</div>
+            <div class="produtoBig">
+                <img src="" />
+            </div>
+            <div class="produtoInfo">
+                <h1>--</h1>
+                <div class="produtoInfo--desc">--</div>
+                <div class="produtoInfo--juros">--</div>
+                <div class="produtoInfo--pricearea">
+                    <div class="produtoInfo--sector">Preço</div>
+                    <div class="produtoInfo--price">
+                        <div class="produtoInfo--actualPrice">R$ --</div>
+                        <div class="produtoInfo--qtarea">
+                            <button class="produtoInfo--qtmenos">-</button>
+                            <div class="produtoInfo--qt">1</div>
+                            <button class="produtoInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-link">
+                    <button class="produtoInfo--addButton">Adicionar ao carrinho</button>
+                    <button class="produtoInfo--cancelButton">Cancelar</button>
+                </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer">
+               <p>newHome s.a. / CNPJ: 01.786.574/0001-90 / Endereço Rua Nonato Cabral, 102 - São Paulo, SP - 20231-902 / fale com a gente</p> 
+               <div class="redes-sociais">
+                   <a href=""><img src="images/facebook.svg" alt="Facebook"></a>
+                   <a href=""><img src="images/instagram.svg" alt="Instagram"></a>
+                   <a href=""><img src="images/youtube.svg" alt="Youtube"></a>
+               </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/produtos.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
